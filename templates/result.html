@@ -1,0 +1,12 @@
+{%extends "index.html"%}
+{%block content%}
+    <body>
+        <div>
+            <br>
+            {{table | safe}}
+        </div>
+        <div>
+            <a href="{{url_for('download')}}" target="blank"><button class="btn btn-info">Download</button></a>
+        </div>
+    </body>
+{%endblock%}
