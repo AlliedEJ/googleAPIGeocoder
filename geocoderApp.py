@@ -15,7 +15,7 @@ def success():
             df=pandas.read_csv(request.files["file_name"])
             latlonList=[]
             for i in df["Addresses"]:
-                g=geocoder.google(i, key='<<YOUR API KEY HERE>>')
+                g=geocoder.google(i, key='<YOUR API KEY HERE>')
                 l=g.latlng
                 latlonList.append(l)
             df["LatLon"]=latlonList
